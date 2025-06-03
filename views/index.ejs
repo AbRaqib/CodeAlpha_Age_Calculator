@@ -14,9 +14,12 @@
         <div>
             <form id=" to-do" method="post" action="/calculate">
                 <label class="label" for="DoB">Your date of birth: </label>
-                <input class="input" type="datetime-local" name="DoB">
+                <input class="input" type="date" name="DoB">
                 <button class="btn" type="submit">Calculate</button>
             </form>
+            <% if (locals.clientAge) {%>
+                <div class="age">You are <%= clientAge %> years old.</div>
+                <% } %>
         </div>
     </div>
 </body>

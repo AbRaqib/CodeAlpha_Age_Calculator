@@ -16,30 +16,31 @@ h1 {
 
 .container {
     display: flex;
-    gap: 2rem;
-    width: 100%;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 2rem;
 }
 
-.input {
-    height: 2rem;
-    border-radius: 4px;
-    transition: border 0.3s;
-    outline: none;
-    font-size: 2em;
-    color: #151c49;
-
-}
-
-div div {
+form {
     flex: 1;
     max-width: 400px;
     padding: 20px;
     background-color: #bbafcc;
     border-radius: 5px;
     text-align: center;
+}
+
+.div div {
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    transition: border 0.3s;
+    outline: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #151c49;
 }
 
 .btn {
@@ -63,4 +64,8 @@ input:focus {
     font-size: 1.5rem;
     color: #151c49;
     margin-bottom: 100px;
+}
+
+.age {
+    margin-top: 10px;
 }
