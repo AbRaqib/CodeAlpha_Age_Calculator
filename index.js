@@ -12,9 +12,13 @@ app.get("/", (req, res) => {
     res.render("index.ejs")
 })
 
+
+function calculateAge(birthDate) {
+    return moment().diff(moment(birthDate), 'years');
+}
 app.post("/calculate", (req, res) => {
     const dateOfBirth = req.body.DoB;
-    const age = moment().diff(moment(dateOfBirth), "years")
+    const age = calculateAge(dateOfBirth)
     res.render("index.ejs", {
         clientAge: age
     })

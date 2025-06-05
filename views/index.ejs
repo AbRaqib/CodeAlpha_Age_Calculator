@@ -10,18 +10,24 @@
 
 <body>
     <h1>Age Calculator</h1>
-    <div class="cotainer">
+    <div class="container">
         <div>
-            <form id=" to-do" method="post" action="/calculate">
+            <form method="post" action="/calculate">
                 <label class="label" for="DoB">Your date of birth: </label>
                 <input class="input" type="date" name="DoB">
                 <button class="btn" type="submit">Calculate</button>
             </form>
             <% if (locals.clientAge) {%>
-                <div class="age">You are <%= clientAge %> years old.</div>
+                <p class="age">You are <%= clientAge %> years old.</p>
                 <% } %>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".btn").click(() => {
+            $(".btn").fadeIn(10).fadeOut(10).fadeIn(10)
+        });
+    </script>
 </body>
 
 </html>
