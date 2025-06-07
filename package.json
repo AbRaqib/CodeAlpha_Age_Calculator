@@ -1,0 +1,15 @@
+{
+  "name": "codealpha",
+  "version": "1.0.0",
+  "description": "Age Calculator",
+  "license": "ISC",
+  "author": "Raqib",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
